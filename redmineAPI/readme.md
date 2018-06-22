@@ -1,5 +1,6 @@
 # How to use
 [1] Put the `redmineApi` folder to the `modules` in your Yii2 project.
+
 [2] Include these settings to your modules section in config file. Where `@app` will be your application root directory (e.g. `@frontend` or `@backend` for advanced template)
 ```sh
 'modules' => [
