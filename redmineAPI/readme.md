@@ -42,7 +42,8 @@
         "kbsali/redmine-api": "~1.0",
         "kartik-v/yii2-grid": "@dev",
         "kartik-v/yii2-widget-select2": "*",
-        "kartik-v/yii2-date-range": "dev-master"
+        "kartik-v/yii2-date-range": "dev-master",
+        "kartik-v/yii2-export": "*"
 }
 ```
  and run  
