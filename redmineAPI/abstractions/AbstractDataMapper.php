@@ -69,7 +69,7 @@ abstract class AbstractDataMapper implements IDataMapper
      * @param $data
      * @return ArrayDataProvider
      */
-    protected function getDataProvider($data)
+    public function getDataProvider($data)
     {
         if (!empty($data) && isset($data)) {
             return new $this->dataProvider([

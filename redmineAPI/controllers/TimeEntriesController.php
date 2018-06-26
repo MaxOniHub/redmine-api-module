@@ -2,6 +2,7 @@
 
 namespace redmineModule\controllers;
 
+use redmineModule\helpers\TimeEntriesGridColumnsProvider;
 use redmineModule\helpers\TimeEntriesTempDataHolder;
 use redmineModule\models\TimeEntriesSearch;
 use Yii;
@@ -28,6 +29,7 @@ class TimeEntriesController extends Controller
         return $this->render('index', [
             "dataProvider" => $dataProvider,
             "searchModel" => $timeEntriesSearch,
+            'gridColumns' => (new TimeEntriesGridColumnsProvider())->getColumns()
         ]);
     }
 

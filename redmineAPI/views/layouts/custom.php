@@ -39,7 +39,7 @@ redmineModule\assets\ModuleAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container module">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>

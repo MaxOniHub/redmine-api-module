@@ -120,3 +120,15 @@ a.desc:after {
     vertical-align: middle;
     text-align: center;
 }
+
+@media (min-width: 1200px)
+{
+    .container.module {
+        width: 100%!important;
+    }
+}
+
+.dropdown-menu
+{
+    z-index: 1002;
+}
