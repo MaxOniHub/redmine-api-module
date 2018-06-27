@@ -26,8 +26,11 @@ class TimeEntriesTempDataHolder
     public function setValues($post_params, $queryParams)
     {
         if ($post_params && !empty($post_params)) {
-            $old_data = $this->dataHolder->getValues($this->key);
-            $updated_data = array_merge($old_data, $post_params);
+            if ($old_data = $this->dataHolder->getValues($this->key)) {
+                $updated_data = array_merge($old_data, $post_params);
+            } else {
+                $updated_data = $post_params;
+            }
             $this->dataHolder->setValues($this->key, $updated_data);
         }
 
